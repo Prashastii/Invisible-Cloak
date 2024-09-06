@@ -4,11 +4,11 @@ This code implements an "Invisible Cloak" effect using OpenCV, a computer vision
 
 How it works
 
-Background Capture: The code captures a background image by taking the median of 30 frames from the camera feed. This helps to reduce noise and create a stable background image.
-Color Detection: The code detects the color blue (within a specified range) in each frame of the video feed. This is done by converting the frame to HSV (Hue, Saturation, Value) color space and applying a mask to isolate the blue color.
-Mask Refining: The mask is refined using morphological operations (opening and dilation) to remove noise and fill in gaps.
-Cloak Effect: The cloak effect is applied by combining the original frame with the background image, using the refined mask to determine which pixels to replace.
-Display: The resulting frame is displayed in a window, creating the illusion of an invisible cloak.
+*Background Capture*: The code captures a background image by taking the median of 30 frames from the camera feed. This helps to reduce noise and create a stable background image.
+*Color Detection*: The code detects the color blue (within a specified range) in each frame of the video feed. This is done by converting the frame to HSV (Hue, Saturation, Value) color space and applying a mask to isolate the blue color.
+*Mask Refining*: The mask is refined using morphological operations (opening and dilation) to remove noise and fill in gaps.
+*Cloak Effec*t: The cloak effect is applied by combining the original frame with the background image, using the refined mask to determine which pixels to replace.
+*Display*: The resulting frame is displayed in a window, creating the illusion of an invisible cloak.
 Usage
 
 Run the code using Python (e.g., python invisible_cloak.py).
